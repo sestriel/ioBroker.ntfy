@@ -1,6 +1,8 @@
 ![Logo](admin/ntfysh.png)
 # ioBroker.ntfysh
 
+t
+
 [![NPM version](https://img.shields.io/npm/v/iobroker.ntfysh.svg)](https://www.npmjs.com/package/iobroker.ntfysh)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.ntfysh.svg)](https://www.npmjs.com/package/iobroker.ntfysh)
 ![Number of Installations](https://iobroker.live/badges/ntfysh-installed.svg)
