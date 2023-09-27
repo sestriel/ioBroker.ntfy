@@ -1,0 +1,75 @@
+{
+  "name": "iobroker.ntfysh",
+  "version": "0.0.1",
+  "description": "Use your ntfy.sh (free selfhosted) server for Push Notifications",
+  "author": {
+    "name": "sestriel",
+    "email": "admin@sestriel.de"
+  },
+  "homepage": "https://github.com/sestriel/ioBroker.ntfysh",
+  "license": "MIT",
+  "keywords": [
+    "pushnotification",
+    "push",
+    "notification",
+    "ntfysh"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sestriel/ioBroker.ntfysh.git"
+  },
+  "engines": {
+    "node": ">= 18"
+  },
+  "dependencies": {
+    "@iobroker/adapter-core": "^3.0.3"
+  },
+  "devDependencies": {
+    "@alcalzone/release-script": "^3.6.0",
+    "@alcalzone/release-script-plugin-iobroker": "^3.6.0",
+    "@alcalzone/release-script-plugin-license": "^3.5.9",
+    "@alcalzone/release-script-plugin-manual-review": "^3.5.9",
+    "@iobroker/adapter-dev": "^1.2.0",
+    "@iobroker/testing": "^4.1.0",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/chai": "^4.3.6",
+    "@types/chai-as-promised": "^7.1.6",
+    "@types/mocha": "^10.0.2",
+    "@types/node": "^18.18.0",
+    "@types/proxyquire": "^1.3.29",
+    "@types/sinon": "^10.0.17",
+    "@types/sinon-chai": "^3.2.10",
+    "chai": "^4.3.9",
+    "chai-as-promised": "^7.1.1",
+    "eslint": "^8.50.0",
+    "mocha": "^10.2.0",
+    "proxyquire": "^2.1.3",
+    "sinon": "^16.0.0",
+    "sinon-chai": "^3.7.0",
+    "typescript": "~5.0.4"
+  },
+  "main": "main.js",
+  "files": [
+    "admin{,/!(src)/**}/!(tsconfig|tsconfig.*|.eslintrc).{json,json5}",
+    "admin{,/!(src)/**}/*.{html,css,png,svg,jpg,js}",
+    "lib/",
+    "www/",
+    "io-package.json",
+    "LICENSE",
+    "main.js"
+  ],
+  "scripts": {
+    "test:js": "mocha --config test/mocharc.custom.json \"{!(node_modules|test)/**/*.test.js,*.test.js,test/**/test!(PackageFiles|Startup).js}\"",
+    "test:package": "mocha test/package --exit",
+    "test:integration": "mocha test/integration --exit",
+    "test": "npm run test:js && npm run test:package",
+    "check": "tsc --noEmit -p tsconfig.check.json",
+    "lint": "eslint .",
+    "translate": "translate-adapter",
+    "release": "release-script"
+  },
+  "bugs": {
+    "url": "https://github.com/sestriel/ioBroker.ntfysh/issues"
+  },
+  "readmeFilename": "README.md"
+}

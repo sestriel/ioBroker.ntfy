@@ -1,0 +1,111 @@
+{
+    "common": {
+        "name": "ntfysh",
+        "version": "0.0.1",
+        "news": {
+            "0.0.1": {
+                "en": "initial release",
+                "de": "Erstveröffentlichung",
+                "ru": "Начальная версия",
+                "pt": "lançamento inicial",
+                "nl": "Eerste uitgave",
+                "fr": "Première version",
+                "it": "Versione iniziale",
+                "es": "Versión inicial",
+                "pl": "Pierwsze wydanie",
+                "uk": "Початкова версія",
+                "zh-cn": "首次出版"
+            }
+        },
+        "title": "ntfy.sh",
+        "titleLang": {
+            "en": "ntfy.sh",
+            "de": "ntfy.sh",
+            "ru": "ntfy.sh",
+            "pt": "ntfy.sh",
+            "nl": "ntfy.sh",
+            "fr": "ntfy.sh",
+            "it": "ntfy.sh",
+            "es": "ntfy.sh",
+            "pl": "ntfy.sh",
+            "uk": "ntfy.sh",
+            "zh-cn": "ntfy.sh"
+        },
+        "desc": {
+            "en": "Use your ntfy.sh (free selfhosted) server for Push Notifications",
+            "de": "Verwenden Sie Ihren ntfy.sh-Server (kostenlos selbst gehostet) für Push-Benachrichtigungen",
+            "ru": "Используйте свой сервер ntfy.sh (бесплатный локальный сервер) для push-уведомлений.",
+            "pt": "Use seu servidor ntfy.sh (auto-hospedado gratuito) para notificações push",
+            "nl": "Gebruik uw ntfy.sh (gratis zelfgehoste) server voor pushmeldingen",
+            "fr": "Utilisez votre serveur ntfy.sh (auto-hébergé gratuitement) pour les notifications push",
+            "it": "Utilizza il tuo server ntfy.sh (self-hosted gratuito) per le notifiche push",
+            "es": "Utilice su servidor ntfy.sh (autohospedado gratuito) para notificaciones automáticas",
+            "pl": "Użyj swojego serwera ntfy.sh (bezpłatnego hostowanego na własnym serwerze) do powiadomień push",
+            "uk": "Використовуйте свій сервер ntfy.sh (безкоштовний власний сервер) для Push-повідомлень",
+            "zh-cn": "使用您的 ntfy.sh（免费自托管）服务器进行推送通知"
+        },
+        "authors": [
+            "sestriel <admin@sestriel.de>"
+        ],
+        "keywords": [
+            "pushnotification",
+            "push",
+            "notification",
+            "ntfysh"
+        ],
+        "license": "MIT",
+        "platform": "Javascript/Node.js",
+        "main": "main.js",
+        "icon": "ntfysh.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/sestriel/ioBroker.ntfysh/main/admin/ntfysh.png",
+        "readme": "https://github.com/sestriel/ioBroker.ntfysh/blob/main/README.md",
+        "loglevel": "info",
+        "mode": "daemon",
+        "type": "messaging",
+        "compact": true,
+        "connectionType": "cloud",
+        "dataSource": "push",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=3.3.22"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=5.1.13"
+            }
+        ]
+    },
+    "native": {
+        "option1": true,
+        "option2": "42"
+    },
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
+    ]
+}
