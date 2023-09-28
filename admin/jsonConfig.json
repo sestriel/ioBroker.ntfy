@@ -2,14 +2,31 @@
     "i18n": true,
     "type": "panel",
     "items": {
-        "option1": {
-            "type": "checkbox",
-            "label": "option1",
+        "serverURL": {
+            "type": "text",
+            "label": "serverURL",
+            "help": "URL without Topic - https://ntfy-server.sh",
             "newLine": true
         },
-        "option2": {
+        "defaultTopic": {
             "type": "text",
-            "label": "option2",
+            "label": "defaultTopic",
+            "newLine": true
+        },
+        "defaultUsername": {
+            "type": "text",
+            "label": "defaultUsername",
+            "newLine": true
+        },
+        "defaultPassword": {
+            "type": "text",
+            "label": "defaultPassword",
+            "newLine": true
+        },
+        "defaultAccessToken": {
+            "type": "text",
+            "label": "defaultAccessToken",
+            "help": "Only if username/password is not used",
             "newLine": true
         }
     }

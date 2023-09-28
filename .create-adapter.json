@@ -1,14 +1,14 @@
 {
     "cli": true,
     "target": "directory",
-    "adapterName": "ntfysh",
+    "adapterName": "ntfy",
     "title": "ntfy.sh",
     "description": "Use your ntfy.sh (free selfhosted) server for Push Notifications",
     "keywords": [
         "pushnotification",
         "push",
         "notification",
-        "ntfysh"
+        "ntfy"
     ],
     "expert": "yes",
     "features": [

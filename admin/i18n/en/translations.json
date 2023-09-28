@@ -1,5 +1,8 @@
 {
-    "ntfysh adapter settings": "Adapter settings for ntfysh",
-    "option1": "option1",
-    "option2": "option2"
+    "ntfy adapter settings": "Adapter settings for ntfy",
+    "serverURL": "URL zum Ntfy-Server",
+    "defaultTopic": "Default Topic",
+    "defaultUsername": "Default Username",
+    "defaultPassword": "Default Password",
+    "defaultAccessToken": "Default Access Token"
 }
