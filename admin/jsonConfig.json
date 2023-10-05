@@ -5,13 +5,39 @@
         "serverURL": {
             "type": "text",
             "label": "serverURL",
-            "help": "URL without Topic - https://ntfy-server.sh",
+            "help": "helpServerURL",
             "newLine": true
+        },
+        "defaultSettingsHeader": {
+            "type": "header",
+            "text": "Default Settings Header",
+            "size": 4
         },
         "defaultTopic": {
             "type": "text",
             "label": "defaultTopic",
             "newLine": true
+        },
+        "defaultTopicAuth": {
+            "type": "select",
+            "label": "defaultTopicAuth",
+            "options": [
+                {
+                    "label": "defaultTopicAuthNone",
+                    "value": 0
+                },
+                {
+                    "label": "defaultTopicAuthUser",
+                    "value": 1
+                },
+                {
+                    "label": "defaultTopicAuthToken",
+                    "value": 2
+                }
+            ],
+            "sm": 12,
+            "md": 6,
+            "lg": 3
         },
         "defaultUsername": {
             "type": "text",
@@ -19,14 +45,15 @@
             "newLine": true
         },
         "defaultPassword": {
-            "type": "text",
+            "type": "password",
             "label": "defaultPassword",
-            "newLine": true
+            "visible": true,
+            "newLine": false
         },
         "defaultAccessToken": {
             "type": "text",
             "label": "defaultAccessToken",
-            "help": "Only if username/password is not used",
+            "help": "helpDefaultAccessToken",
             "newLine": true
         }
     }

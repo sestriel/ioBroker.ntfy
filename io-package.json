@@ -5,7 +5,16 @@
         "news": {
             "0.1.1": {
                 "en": "first working release",
-                "de": "erste funktionierende Veröffentlichung"
+                "de": "erste funktionierende Veröffentlichung",
+                "ru": "первый рабочий релиз",
+                "pt": "primeira versão de trabalho",
+                "nl": "eerste werkende uitgave",
+                "fr": "première version de travail",
+                "it": "prima versione funzionante",
+                "es": "primera versión funcional",
+                "pl": "pierwsza wersja robocza",
+                "uk": "перший робочий випуск",
+                "zh-cn": "第一个工作版本"
             },
             "0.0.1": {
                 "en": "initial release",
@@ -87,9 +96,11 @@
             }
         ]
     },
-    "native": {
-
-    },
+    "encryptedNative": [
+        "defaultPassword",
+        "defaultAccessToken"
+    ],
+    "native": {},
     "objects": [],
     "instanceObjects": [
         {

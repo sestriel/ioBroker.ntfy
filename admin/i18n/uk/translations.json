@@ -1,5 +1,13 @@
 {
-    "ntfy adapter settings": "Налаштування адаптера для ntfy",
-    "option1": "варіант1",
-    "option2": "варіант2"
+    "serverURL": "URL-адреса сервера Ntfy",
+    "defaultTopic": "Тема за замовчуванням",
+    "defaultUsername": "Ім'я користувача за замовчуванням",
+    "defaultPassword": "Пароль за умовчанням",
+    "defaultAccessToken": "Маркер доступу за умовчанням",
+    "helpServerURL": "URL без теми - https://ntfy-server.sh",
+    "helpDefaultAccessToken": "Лише якщо ім’я користувача/пароль не використовується",
+    "defaultTopicAuth": "Автентифікація теми за замовчуванням",
+    "defaultTopicAuthNone": "Без автентифікації",
+    "defaultTopicAuthUser": "Автентифікація користувача",
+    "defaultTopicAuthToken": "Маркер доступу"
 }

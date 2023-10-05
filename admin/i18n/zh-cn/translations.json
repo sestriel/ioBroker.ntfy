@@ -1,5 +1,13 @@
 {
-    "ntfy adapter settings": "ntfy的适配器设置",
-    "option1": "选项1",
-    "option2": "选项2"
+    "serverURL": "URL zum Ntfy 服务器",
+    "defaultTopic": "默认主题",
+    "defaultUsername": "默认用户名",
+    "defaultPassword": "默认密码",
+    "defaultAccessToken": "默认访问令牌",
+    "helpServerURL": "没有主题的 URL - https://ntfy-server.sh",
+    "helpDefaultAccessToken": "仅当不使用用户名/密码时",
+    "defaultTopicAuth": "默认主题认证",
+    "defaultTopicAuthNone": "无需验证",
+    "defaultTopicAuthUser": "用户认证",
+    "defaultTopicAuthToken": "访问令牌"
 }

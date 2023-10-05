@@ -55,7 +55,7 @@ class ntfy extends utils.Adapter {
         return true;
     }
     checkAuth() {
-        if ( (!this.config.defaultUsername || !this.config.defaultPassword) && !this.config.defaultAccessToken) {
+        if ( this.config.defaultTopicAuth !== 1 && ((!this.config.defaultUsername || !this.config.defaultPassword) && !this.config.defaultAccessToken )) {
             this.log.info('Ntfy-Config: No Default Credentials are set (either username & password or access token');
             return false;
         }
@@ -67,10 +67,10 @@ class ntfy extends utils.Adapter {
      *
      * @param {ioBroker.Message} obj
      */
-    onMessage(obj) {
+    async onMessage(obj) {
         if (typeof obj === 'object' && obj.message) {
             if (obj.command === 'send') {
-                if (this.checkConfig()) {
+                if (await this.checkConfig()) {
                     this.sendMessage(obj);
                 }
             }
@@ -90,15 +90,19 @@ class ntfy extends utils.Adapter {
         this.messageTime = Date.now();
         this.messageText = json;
 
-        axios.post(this.config.serverURL, json, {
-            auth: {
-                username: this.config.defaultUsername,
-                password: this.config.defaultPassword
-            }
-        }).catch(err => {
-            this.log.error(`Ntfy error: ${err}`);
-            this.log.error(`Ntfy error: ${JSON.stringify(err.response.data)}`);
-        });
+        let axiosConfig = {};
+        if (this.config.defaultTopicAuth === 1) {
+            axiosConfig = { headers: { 'Authorization': 'Basic ' + Buffer.from(this.config.defaultUsername + ':' + this.config.defaultPassword).toString('base64') } };
+        } else if (this.config.defaultTopicAuth === 2) {
+            axiosConfig = { headers: { 'Authorization': 'Bearer ' +  this.config.defaultAccessToken } };
+        }
+
+        axios.post(this.config.serverURL, json, axiosConfig)
+            .catch(err => {
+                this.log.error(`Ntfy error: ${err}`);
+                this.log.error(`Ntfy error: ${JSON.stringify(err.response.data)}`);
+                this.log.error(`Ntfy with config: ${JSON.stringify(axiosConfig)}`);
+            });
     }
 }
 

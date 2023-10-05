@@ -1,5 +1,13 @@
 {
-    "ntfy adapter settings": "Ustawienia adaptera dla ntfy",
-    "option1": "opcja 1",
-    "option2": "Opcja 2"
+    "serverURL": "Adres URL serwera Ntfy",
+    "defaultTopic": "Domyślny temat",
+    "defaultUsername": "Domyślna nazwa użytkownika",
+    "defaultPassword": "Domyślne hasło",
+    "defaultAccessToken": "Domyślny token dostępu",
+    "helpServerURL": "Adres URL bez tematu - https://ntfy-server.sh",
+    "helpDefaultAccessToken": "Tylko jeśli nazwa użytkownika/hasło nie jest używana",
+    "defaultTopicAuth": "Domyślne uwierzytelnianie tematu",
+    "defaultTopicAuthNone": "Brak autoryzacji",
+    "defaultTopicAuthUser": "Uwierzytelnianie użytkownika",
+    "defaultTopicAuthToken": "Token dostępu"
 }

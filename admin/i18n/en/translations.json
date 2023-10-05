@@ -1,8 +1,13 @@
 {
-    "ntfy adapter settings": "Adapter settings for ntfy",
-    "serverURL": "URL zum Ntfy-Server",
-    "defaultTopic": "Default Topic",
-    "defaultUsername": "Default Username",
-    "defaultPassword": "Default Password",
-    "defaultAccessToken": "Default Access Token"
+  "serverURL": "URL zum Ntfy-Server",
+  "defaultTopic": "Default Topic",
+  "defaultUsername": "Default Username",
+  "defaultPassword": "Default Password",
+  "defaultAccessToken": "Default Access Token",
+  "helpServerURL": "URL without Topic - https://ntfy-server.sh",
+  "helpDefaultAccessToken": "Only if username/password is not used",
+  "defaultTopicAuth": "Default Topic Authentication",
+  "defaultTopicAuthNone": "No Authentication",
+  "defaultTopicAuthUser": "User Authentication",
+  "defaultTopicAuthToken": "Access Token"
 }
