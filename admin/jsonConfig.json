@@ -16,7 +16,10 @@
         "defaultTopic": {
             "type": "text",
             "label": "defaultTopic",
-            "newLine": true
+            "newLine": true,
+            "sm": 12,
+            "md": 6,
+            "lg": 3
         },
         "defaultTopicAuth": {
             "type": "select",
@@ -42,19 +45,92 @@
         "defaultUsername": {
             "type": "text",
             "label": "defaultUsername",
-            "newLine": true
+            "newLine": true,
+            "sm": 12,
+            "md": 6,
+            "lg": 3
         },
         "defaultPassword": {
             "type": "password",
             "label": "defaultPassword",
             "visible": true,
-            "newLine": false
+            "newLine": false,
+            "sm": 12,
+            "md": 6,
+            "lg": 3
         },
         "defaultAccessToken": {
             "type": "text",
             "label": "defaultAccessToken",
             "help": "helpDefaultAccessToken",
-            "newLine": true
+            "newLine": false,
+            "sm": 12,
+            "md": 6,
+            "lg": 3
+        },
+        "presetTopicsDivider": {
+            "type": "divider"
+        },
+        "presetTopics": {
+            "type": "table",
+            "sm": 12,
+            "items": [
+                {
+                    "type": "text",
+                    "width": "20%",
+                    "attr": "presetTopicName",
+                    "title": "TopicName"
+                },
+                {
+                    "type": "select",
+                    "width": "20%",
+                    "attr": "presetTopicAuth",
+                    "title": "TopicAuth",
+                    "options": [
+                        {
+                            "label": "defaultTopicAuthNone",
+                            "value": 0
+                        },
+                        {
+                            "label": "defaultTopicAuthUser",
+                            "value": 1
+                        },
+                        {
+                            "label": "defaultTopicAuthToken",
+                            "value": 2
+                        }
+                    ]
+                },
+                {
+                    "type": "text",
+                    "width": "20%",
+                    "attr": "presetTopicUsername",
+                    "title": "TopicUsername"
+                },
+                {
+                    "type": "password",
+                    "width": "20%",
+                    "attr": "presetTopicPassword",
+                    "title": "TopicPassword",
+                    "visible": true
+                },
+                {
+                    "type": "password",
+                    "width": "20%",
+                    "attr": "presetTopicAccessToken",
+                    "title": "TopicAccessToken",
+                    "visible": true
+                }
+            ]
+        },
+        "actionsDivider": {
+            "type": "divider"
+        },
+        "testBtn": {
+            "type": "sendTo",
+            "command": "testBtn",
+            "variant": "contained",
+            "label": "Test"
         }
     }
 }

@@ -2,6 +2,7 @@
 
 const utils = require('@iobroker/adapter-core');
 const axios = require('axios');
+const {type} = require('os');
 
 class ntfy extends utils.Adapter {
 
@@ -73,6 +74,19 @@ class ntfy extends utils.Adapter {
                 if (await this.checkConfig()) {
                     this.sendMessage(obj);
                 }
+            }
+        }
+        if (typeof obj === 'object' && obj.command) {
+            if (obj.command === 'testBtn') {
+                this.log.error(`test: ${JSON.stringify(this.config.presetTopics)} and type ${typeof this.config.presetTopics}`);
+                let testMsg;
+                if (typeof this.config.presetTopics !== 'object' || this.config.presetTopics.length <= 0) {
+                    testMsg = 'Presets: None';
+                } else {
+                    testMsg = `Presets: ${JSON.stringify(this.config.presetTopics)}`;
+                }
+
+                this.sendTo(obj.from, obj.command, [{label: testMsg, value: ''}], obj.callback);
             }
         }
     }
