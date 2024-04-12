@@ -9,5 +9,18 @@
     "defaultTopicAuth": "默认主题认证",
     "defaultTopicAuthNone": "无需验证",
     "defaultTopicAuthUser": "用户认证",
-    "defaultTopicAuthToken": "访问令牌"
+    "defaultTopicAuthToken": "访问令牌",
+    "defaultSettingsHeader": "默认主题设置",
+    "defaultSubscribed": "订阅默认主题",
+    "presetTopicName": "话题",
+    "presetTopicAuth": "主题认证",
+    "presetTopicAuthNone": "无需验证",
+    "presetTopicAuthUser": "用户认证",
+    "presetTopicAuthToken": "访问令牌",
+    "presetTopicUsername": "默认用户名",
+    "presetTopicPassword": "默认密码",
+    "presetTopicAccessToken": "默认访问令牌",
+    "presetSettingsHeader": "附加预设",
+    "presetTopicSubsribed": "订阅",
+    "presetTopicSubscribed": "订阅"
 }

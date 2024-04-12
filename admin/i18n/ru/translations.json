@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Аутентификация темы по умолчанию",
     "defaultTopicAuthNone": "Нет аутентификации",
     "defaultTopicAuthUser": "Аутентификация пользователя",
-    "defaultTopicAuthToken": "Токен доступа"
+    "defaultTopicAuthToken": "Токен доступа",
+    "defaultSettingsHeader": "Настройки темы по умолчанию",
+    "defaultSubscribed": "Подписаться на тему по умолчанию",
+    "presetTopicName": "Тема",
+    "presetTopicAuth": "Аутентификация темы",
+    "presetTopicAuthNone": "Нет аутентификации",
+    "presetTopicAuthUser": "Аутентификация пользователя",
+    "presetTopicAuthToken": "Токен доступа",
+    "presetTopicUsername": "Имя пользователя по умолчанию",
+    "presetTopicPassword": "Пароль по умолчанию",
+    "presetTopicAccessToken": "Токен доступа по умолчанию",
+    "presetSettingsHeader": "Дополнительные пресеты",
+    "presetTopicSubsribed": "Подписаться",
+    "presetTopicSubscribed": "Подписаться"
 }

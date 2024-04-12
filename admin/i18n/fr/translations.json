@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Authentification du sujet par défaut",
     "defaultTopicAuthNone": "Pas d'authentification",
     "defaultTopicAuthUser": "Authentification d'utilisateur",
-    "defaultTopicAuthToken": "Jeton d'accès"
+    "defaultTopicAuthToken": "Jeton d'accès",
+    "defaultSettingsHeader": "Paramètres de sujet par défaut",
+    "defaultSubscribed": "Abonnez-vous au sujet par défaut",
+    "presetTopicName": "Sujet",
+    "presetTopicAuth": "Authentification du sujet",
+    "presetTopicAuthNone": "Pas d'authentification",
+    "presetTopicAuthUser": "Authentification d'utilisateur",
+    "presetTopicAuthToken": "Jeton d'accès",
+    "presetTopicUsername": "Nom d'utilisateur par défaut",
+    "presetTopicPassword": "Mot de passe par défaut",
+    "presetTopicAccessToken": "Jeton d'accès par défaut",
+    "presetSettingsHeader": "Préréglages supplémentaires",
+    "presetTopicSubsribed": "S'abonner",
+    "presetTopicSubscribed": "S'abonner"
 }

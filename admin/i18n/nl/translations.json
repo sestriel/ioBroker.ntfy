@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Standaard onderwerpverificatie",
     "defaultTopicAuthNone": "Geen authenticatie",
     "defaultTopicAuthUser": "Gebruikersverificatie",
-    "defaultTopicAuthToken": "Toegangstoken"
+    "defaultTopicAuthToken": "Toegangstoken",
+    "defaultSettingsHeader": "Standaard onderwerpinstellingen",
+    "defaultSubscribed": "Abonneer u op het standaardonderwerp",
+    "presetTopicName": "Onderwerp",
+    "presetTopicAuth": "Onderwerpauthenticatie",
+    "presetTopicAuthNone": "Geen authenticatie",
+    "presetTopicAuthUser": "Gebruikersverificatie",
+    "presetTopicAuthToken": "Toegangstoken",
+    "presetTopicUsername": "Standaard gebruikersnaam",
+    "presetTopicPassword": "Standaard wachtwoord",
+    "presetTopicAccessToken": "Standaardtoegangstoken",
+    "presetSettingsHeader": "Extra voorinstellingen",
+    "presetTopicSubsribed": "Abonneren",
+    "presetTopicSubscribed": "Abonneren"
 }

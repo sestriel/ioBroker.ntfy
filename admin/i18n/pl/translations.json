@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Domyślne uwierzytelnianie tematu",
     "defaultTopicAuthNone": "Brak autoryzacji",
     "defaultTopicAuthUser": "Uwierzytelnianie użytkownika",
-    "defaultTopicAuthToken": "Token dostępu"
+    "defaultTopicAuthToken": "Token dostępu",
+    "defaultSettingsHeader": "Domyślne ustawienia tematu",
+    "defaultSubscribed": "Subskrybuj domyślny temat",
+    "presetTopicName": "Temat",
+    "presetTopicAuth": "Uwierzytelnianie tematu",
+    "presetTopicAuthNone": "Brak autoryzacji",
+    "presetTopicAuthUser": "Uwierzytelnianie użytkownika",
+    "presetTopicAuthToken": "Token dostępu",
+    "presetTopicUsername": "Domyślna nazwa użytkownika",
+    "presetTopicPassword": "Domyślne hasło",
+    "presetTopicAccessToken": "Domyślny token dostępu",
+    "presetSettingsHeader": "Dodatkowe ustawienia wstępne",
+    "presetTopicSubsribed": "Subskrybuj",
+    "presetTopicSubscribed": "Subskrybuj"
 }

@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "ntfy",
-        "version": "0.1.1",
+        "version": "0.2.0",
         "news": {
+            "0.2.0": {
+                "en": "Added ability to subscribe to topics.",
+                "de": "Topics können jetzt auch abonniert werden.",
+                "ru": "Добавлена способность подписываться на темы.",
+                "pt": "Adicionado capacidade de se inscrever em tópicos.",
+                "nl": "Toegevoegd vermogen om zich te abonneren op onderwerpen.",
+                "fr": "Ajout de la possibilité de s'abonner à des sujets.",
+                "it": "Aggiunta la capacità di sottoscrivere a argomenti.",
+                "es": "Posibilidad de suscribirse a temas.",
+                "pl": "Dodano możliwość subskrypcji tematów.",
+                "uk": "Додана можливість підписатися на теми.",
+                "zh-cn": "增加了订阅主题的能力."
+            },
             "0.1.1": {
                 "en": "first working release",
                 "de": "erste funktionierende Veröffentlichung",

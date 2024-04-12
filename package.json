@@ -1,6 +1,6 @@
 {
   "name": "iobroker.ntfy",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Use your ntfy.sh (free self hosted) server for Push Notifications",
   "author": {
     "name": "sestriel",
@@ -23,7 +23,8 @@
   },
   "dependencies": {
     "@iobroker/adapter-core": "^3.0.3",
-    "axios": "^1.5.1"
+    "axios": "^1.5.1",
+    "eventsource": "^2.0.2"
   },
   "devDependencies": {
     "@alcalzone/release-script": "^3.6.0",

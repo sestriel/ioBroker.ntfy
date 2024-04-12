@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Autenticação de tópico padrão",
     "defaultTopicAuthNone": "Sem autenticação",
     "defaultTopicAuthUser": "Autenticação de usuário",
-    "defaultTopicAuthToken": "Token de acesso"
+    "defaultTopicAuthToken": "Token de acesso",
+    "defaultSettingsHeader": "Configurações de tópico padrão",
+    "defaultSubscribed": "Inscrever-se no tópico padrão",
+    "presetTopicName": "Tema",
+    "presetTopicAuth": "Autenticação de tópico",
+    "presetTopicAuthNone": "Sem autenticação",
+    "presetTopicAuthUser": "Autenticação de usuário",
+    "presetTopicAuthToken": "Token de acesso",
+    "presetTopicUsername": "Nome de usuário padrão",
+    "presetTopicPassword": "Senha padrão",
+    "presetTopicAccessToken": "Token de acesso padrão",
+    "presetSettingsHeader": "Predefinições adicionais",
+    "presetTopicSubsribed": "Se inscrever",
+    "presetTopicSubscribed": "Se inscrever"
 }

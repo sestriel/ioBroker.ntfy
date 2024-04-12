@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Autenticazione argomento predefinita",
     "defaultTopicAuthNone": "Nessuna autenticazione",
     "defaultTopicAuthUser": "Autenticazione utente",
-    "defaultTopicAuthToken": "Token di accesso"
+    "defaultTopicAuthToken": "Token di accesso",
+    "defaultSettingsHeader": "Impostazioni argomento predefinite",
+    "defaultSubscribed": "Iscriviti all'argomento predefinito",
+    "presetTopicName": "Argomento",
+    "presetTopicAuth": "Autenticazione dell'argomento",
+    "presetTopicAuthNone": "Nessuna autenticazione",
+    "presetTopicAuthUser": "Autenticazione utente",
+    "presetTopicAuthToken": "Token di accesso",
+    "presetTopicUsername": "Nome utente predefinito",
+    "presetTopicPassword": "Password predefinita",
+    "presetTopicAccessToken": "Token di accesso predefinito",
+    "presetSettingsHeader": "Preimpostazioni aggiuntive",
+    "presetTopicSubsribed": "sottoscrivi",
+    "presetTopicSubscribed": "sottoscrivi"
 }

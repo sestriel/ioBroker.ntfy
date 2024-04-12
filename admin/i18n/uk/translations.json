@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Автентифікація теми за замовчуванням",
     "defaultTopicAuthNone": "Без автентифікації",
     "defaultTopicAuthUser": "Автентифікація користувача",
-    "defaultTopicAuthToken": "Маркер доступу"
+    "defaultTopicAuthToken": "Маркер доступу",
+    "defaultSettingsHeader": "Параметри теми за умовчанням",
+    "defaultSubscribed": "Підписатися на тему за замовчуванням",
+    "presetTopicName": "Тема",
+    "presetTopicAuth": "Автентифікація теми",
+    "presetTopicAuthNone": "Без автентифікації",
+    "presetTopicAuthUser": "Автентифікація користувача",
+    "presetTopicAuthToken": "Маркер доступу",
+    "presetTopicUsername": "Ім'я користувача за замовчуванням",
+    "presetTopicPassword": "Пароль за умовчанням",
+    "presetTopicAccessToken": "Маркер доступу за умовчанням",
+    "presetSettingsHeader": "Додаткові пресети",
+    "presetTopicSubsribed": "Підпишіться",
+    "presetTopicSubscribed": "Підпишіться"
 }

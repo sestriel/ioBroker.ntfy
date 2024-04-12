@@ -10,7 +10,7 @@
         },
         "defaultSettingsHeader": {
             "type": "header",
-            "text": "Default Settings Header",
+            "text": "defaultSettingsHeader",
             "size": 4
         },
         "defaultTopic": {
@@ -42,6 +42,13 @@
             "md": 6,
             "lg": 3
         },
+        "defaultSubscribed": {
+            "type": "checkbox",
+            "label": "defaultSubscribed",
+            "sm": 12,
+            "md": 6,
+            "lg": 3
+        },
         "defaultUsername": {
             "type": "text",
             "label": "defaultUsername",
@@ -68,8 +75,10 @@
             "md": 6,
             "lg": 3
         },
-        "presetTopicsDivider": {
-            "type": "divider"
+        "presetTopicsHeader": {
+            "type": "header",
+            "text": "presetSettingsHeader",
+            "size": 4
         },
         "presetTopics": {
             "type": "table",
@@ -77,49 +86,55 @@
             "items": [
                 {
                     "type": "text",
-                    "width": "20%",
                     "attr": "presetTopicName",
-                    "title": "TopicName"
+                    "title": "presetTopicName"
+                },
+                {
+                    "type": "checkbox",
+                    "attr": "presetTopicSubscribed",
+                    "title": "presetTopicSubscribed",
+                    "style": {
+                        "width": "auto",
+                        "textAlign": "center"
+                    }
                 },
                 {
                     "type": "select",
-                    "width": "20%",
                     "attr": "presetTopicAuth",
-                    "title": "TopicAuth",
+                    "title": "presetTopicAuth",
                     "options": [
                         {
-                            "label": "defaultTopicAuthNone",
+                            "label": "presetTopicAuthNone",
                             "value": 0
                         },
                         {
-                            "label": "defaultTopicAuthUser",
+                            "label": "presetTopicAuthUser",
                             "value": 1
                         },
                         {
-                            "label": "defaultTopicAuthToken",
+                            "label": "presetTopicAuthToken",
                             "value": 2
                         }
                     ]
                 },
                 {
                     "type": "text",
-                    "width": "20%",
                     "attr": "presetTopicUsername",
-                    "title": "TopicUsername"
+                    "title": "presetTopicUsername"
                 },
                 {
                     "type": "password",
-                    "width": "20%",
                     "attr": "presetTopicPassword",
-                    "title": "TopicPassword",
-                    "visible": true
+                    "title": "presetTopicPassword",
+                    "visible": true,
+                    "style": {}
                 },
                 {
                     "type": "password",
-                    "width": "20%",
                     "attr": "presetTopicAccessToken",
-                    "title": "TopicAccessToken",
-                    "visible": true
+                    "title": "presetTopicAccessToken",
+                    "visible": true,
+                    "style": {}
                 }
             ]
         },

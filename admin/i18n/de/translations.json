@@ -1,5 +1,6 @@
 {
     "serverURL": "URL zum Ntfy-Server",
+    "defaultSettingsHeader": "Standard Topic Einstellungen",
     "defaultTopic": "Standard Topic",
     "defaultUsername": "Standard-Benutzername",
     "defaultPassword": "Standard-Passwort",
@@ -9,5 +10,17 @@
     "defaultTopicAuth": "Standard-Topic-Authentifizierung",
     "defaultTopicAuthNone": "Keine Authentifikation",
     "defaultTopicAuthUser": "Benutzer/Passwort",
-    "defaultTopicAuthToken": "Zugangstoken"
+    "defaultTopicAuthToken": "Zugangstoken",
+    "defaultSubscribed": "Standard-Topic abonnieren",
+    "presetTopicName": "Thema",
+    "presetTopicAuth": "Themenauthentifizierung",
+    "presetTopicAuthNone": "Keine Authentifikation",
+    "presetTopicAuthUser": "Benutzerauthentifizierung",
+    "presetTopicAuthToken": "Zugangstoken",
+    "presetTopicUsername": "Standardbenutzername",
+    "presetTopicPassword": "Standard-Passwort",
+    "presetTopicAccessToken": "Standardzugriffstoken",
+    "presetSettingsHeader": "Zusätzliche Voreinstellungen",
+    "presetTopicSubsribed": "Abonnieren",
+    "presetTopicSubscribed": "Abonnieren"
 }

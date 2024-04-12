@@ -9,5 +9,18 @@
     "defaultTopicAuth": "Autenticación de tema predeterminada",
     "defaultTopicAuthNone": "Sin autenticacion",
     "defaultTopicAuthUser": "Autenticacion de usuario",
-    "defaultTopicAuthToken": "Token de acceso"
+    "defaultTopicAuthToken": "Token de acceso",
+    "defaultSettingsHeader": "Configuración de tema predeterminada",
+    "defaultSubscribed": "Suscríbete al tema predeterminado",
+    "presetTopicName": "Tema",
+    "presetTopicAuth": "Autenticación de tema",
+    "presetTopicAuthNone": "Sin autenticacion",
+    "presetTopicAuthUser": "Autenticacion de usuario",
+    "presetTopicAuthToken": "Token de acceso",
+    "presetTopicUsername": "Nombre de usuario predeterminado",
+    "presetTopicPassword": "Contraseña predeterminada",
+    "presetTopicAccessToken": "Token de acceso predeterminado",
+    "presetSettingsHeader": "Presets adicionales",
+    "presetTopicSubsribed": "Suscribir",
+    "presetTopicSubscribed": "Suscribir"
 }

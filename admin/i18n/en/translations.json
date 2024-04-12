@@ -1,13 +1,26 @@
 {
   "serverURL": "URL zum Ntfy-Server",
+  "helpServerURL": "URL without Topic - https://ntfy-server.sh",
+  "defaultSettingsHeader": "Default Topic Settings",
   "defaultTopic": "Default Topic",
   "defaultUsername": "Default Username",
   "defaultPassword": "Default Password",
   "defaultAccessToken": "Default Access Token",
-  "helpServerURL": "URL without Topic - https://ntfy-server.sh",
   "helpDefaultAccessToken": "Only if username/password is not used",
   "defaultTopicAuth": "Default Topic Authentication",
   "defaultTopicAuthNone": "No Authentication",
   "defaultTopicAuthUser": "User Authentication",
-  "defaultTopicAuthToken": "Access Token"
+  "defaultTopicAuthToken": "Access Token",
+  "defaultSubscribed": "Subscribe to default Topic",
+
+  "presetSettingsHeader": "Additional Presets",
+  "presetTopicName": "Topic",
+  "presetTopicSubscribed": "Subscribe",
+  "presetTopicAuth": "Topic Authentication",
+  "presetTopicAuthNone": "No Authentication",
+  "presetTopicAuthUser": "User Authentication",
+  "presetTopicAuthToken": "Access Token",
+  "presetTopicUsername": "Username",
+  "presetTopicPassword": "Password",
+  "presetTopicAccessToken": "Access Token"
 }
