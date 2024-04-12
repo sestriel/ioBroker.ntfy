@@ -16,6 +16,10 @@ Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 * ntfy has an invalid jsonConfig (see [Issue](https://github.com/ioBroker/adapter-react-v5/issues/292))
 
 ## Changelog
+<!--
+	Placeholder for the next version (at the beginning of the line):
+	### **WORK IN PROGRESS**
+-->
 ### 0.2.1 (2024-04-12)
 * (sestriel) Added proper unload handler
 * (sestriel) Fixed some errors shown from adapter-checker
