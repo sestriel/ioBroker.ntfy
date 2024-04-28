@@ -1,8 +1,21 @@
 {
     "common": {
         "name": "ntfy",
-        "version": "0.2.2",
+        "version": "0.3.0",
         "news": {
+            "0.3.0": {
+                "en": "Added URL-Attachments\nAdded Click-URL\nAdded Actionbuttons (View & HTTP)\nAdded Tags\n\nRemoved wrong error messages\nRestructuring.",
+                "de": "URL-Anhänge hinzugefügt\nClick-URL hinzugefügt\nActionbuttons hinzugefügt (View & HTTP)\nTags hinzugefügt\n\nEntfernen falscher Fehlermeldungen\nUmstrukturierung.",
+                "ru": "Добавить URL-адреса\nДобавлено Click-URL\nДобавлены кнопки Действия (View & HTTP)\nДобавленные теги\n\nУдаление сообщений об ошибках\nРеструктуризация.",
+                "pt": "Adicionado URL-Attachments\nAdicionado Click-URL\nAdicionado botões de ação (Ver & HTTP)\nTags adicionadas\n\nMensagens de erro erradas removidas\nReestruturação.",
+                "nl": "URL-attachments toegevoegd\nToegevoegd Click-URL\nToegevoegde actieknoppen (Bekijk & HTTP)\nToegevoegde tags\n\nVerkeerde foutmeldingen verwijderd\nHerstructurering.",
+                "fr": "Ajout d'adresses URL\nAjouté Click-URL\nAjout de boutons d'action (View & HTTP)\nTags ajoutés\n\nSupprimé les messages d'erreur erronés\nRestructuration.",
+                "it": "Aggiunto URL-allegato\nAggiunto Click-URL\nPulsanti di azione aggiunti (Visualizza & HTTP)\nAggiunto Tags\n\nRimozione dei messaggi di errore sbagliati\nRistrutturazione.",
+                "es": "Añadido URL-Apegos\nAñadido Click-URL\nBotones de acción añadidos (Ver \" HTTP)\nAñadido\n\nEliminar mensajes equivocados de error\nReestructuración.",
+                "pl": "Dodano dodatki URL\nDodano Click- URL\nDodano przyciski aktywacji (Widok & HTTP)\nDodano znaczniki\n\nUsunięto złe komunikaty błędów\nRestrukturyzacja.",
+                "uk": "Додано URL-адреси\nДодати Click-URL\nДодано Actionbuttons (Переглянути та HTTP)\nДодати теги\n\nВидалити неправильні повідомлення про помилку\nРеструктуризація.",
+                "zh-cn": "添加的 URL 附加\n已添加的点击- URL\n添加的动作按钮( View & HTTP)\n添加标记\n\n删除错误消息\n重组."
+            },
             "0.2.2": {
                 "en": "Bump version to 0.2.2",
                 "de": "Bump-Version auf 0,2.2",

@@ -1,13 +1,14 @@
 ![Logo](admin/ntfy.png)
 # ioBroker ntfy.sh adapter
 
-[![NPM version](https://img.shields.io/npm/v/iobroker.ntfy.svg)](https://www.npmjs.com/package/iobroker.ntfy) [![Downloads](https://img.shields.io/npm/dm/iobroker.ntfy.svg)](https://www.npmjs.com/package/iobroker.ntfy) ![Number of Installations](https://iobroker.live/badges/ntfy-installed.svg) ![Current version in stable repository](https://iobroker.live/badges/ntfy-stable.svg)
-![Test and Release](https://github.com/sestriel/ioBroker.ntfy/workflows/Test%20and%20Release/badge.svg)
+[![NPM version](https://img.shields.io/npm/v/iobroker.ntfy.svg)](https://www.npmjs.com/package/iobroker.ntfy) [![Downloads](https://img.shields.io/npm/dm/iobroker.ntfy.svg)](https://www.npmjs.com/package/iobroker.ntfy) ![Number of Installations](https://iobroker.live/badges/ntfy-installed.svg) 
+
+![Current version in stable repository](https://iobroker.live/badges/ntfy-stable.svg) ![Test and Release](https://github.com/sestriel/ioBroker.ntfy/workflows/Test%20and%20Release/badge.svg)
 
 Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 
 * Integrates an Blockly to easily send notifications
-  - Currently supported: Title, Message, Priority
+  - Currently supported: Title, Message, Priority, Tags, Click-URL, Actionbuttons (View & HTTP), URL-Attachments
 * Subscribe to topics without the need of extra javascript/blockly 
   - messages will be pushed to the corresponding, auto-created ioBroker object
 * Send and receive from as many topics as you want
@@ -20,6 +21,13 @@ Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+### 0.3.0 (2024-04-28)
+* (sestriel) Added URL-Attachments
+* (sestriel) Added Click-URL
+* (sestriel) Added Actionbuttons (View & HTTP)
+* (sestriel) Added Tags
+* (sestriel) Removed wrong error messages
+* (sestriel) Restructuring
 ### 0.2.2 (2024-04-12)
 * (sestriel) Bump version to 0.2.2
 ### 0.2.1 (2024-04-12)
