@@ -4,6 +4,8 @@ const utils       = require('@iobroker/adapter-core');
 const axios       = require('axios');
 
 const { Topic }   = require('./lib/topic');
+const { Message } = require('./lib/message');
+const { ActionButtonView, ActionButtonHTTP } = require('./lib/actionButton');
 
 class ntfy extends utils.Adapter  {
 
@@ -18,7 +20,6 @@ class ntfy extends utils.Adapter  {
         });
 
         this.messageTime = 0;
-        this.messageText = '';
         this.topics = {};
 
         this.on('ready',   this.onReady.bind(this));
@@ -126,30 +127,52 @@ class ntfy extends utils.Adapter  {
     {
         if (!obj.message.topic) obj.message.topic = this.config.defaultTopic;
 
-        const json = JSON.stringify(obj.message);
+        const message = new Message(obj.message.topic, obj.message.title, obj.message.message, obj.message.priority);
+        message.addDelay(obj.message.delay);
+        message.addTags(obj.message.tags);
+        message.addClickURL(obj.message.clickURL);
 
-        if (this.messageTime && this.messageText === json && Date.now() - this.messageTime < 1000) {
-            return;
+        if (obj.message.attachment !== null && obj.message.attachment.url !== '' && obj.message.attachment.name !== '') {
+            message.addAttachment(obj.message.attachment.url, obj.message.attachment.name);
         }
 
+        let actionButton = null;
+
+        if (obj.message.actionButton !== null) {
+            switch (obj.message.actionButton.type) {
+                case 'view':
+                    actionButton = new ActionButtonView(obj.message.actionButton.label, obj.message.actionButton.url, obj.message.actionButton.clear);
+                    break;
+                case 'http':
+                    actionButton = new ActionButtonHTTP(obj.message.actionButton.label, obj.message.actionButton.url, obj.message.actionButton.clear);
+                    actionButton.setMethod(obj.message.actionButton.method);
+                    actionButton.setHeaders(obj.message.actionButton.headers);
+                    actionButton.setBody(JSON.stringify(obj.message.actionButton.body));
+                    break;
+            }
+            message.addActionBtn(actionButton);
+        }
+
+        this.log.debug('Message body (JSON): ' + JSON.stringify(message));
+
+        if (this.messageTime && Date.now() - this.messageTime < 1000) return;
+
         this.messageTime = Date.now();
-        this.messageText = json;
+
+        this.topics[message.topic].sendMessage(message);
     }
 
     getTopics()
     {
         const topics = {};
 
-        // Add default topic
-        topics[0] = new Topic(this, this.config.defaultTopic, this.config.defaultSubscribed, this.config.defaultTopicAuth, this.config.defaultUsername, this.config.defaultPassword, this.config.defaultAccessToken);
+        topics[this.config.defaultTopic] = new Topic(this, this.config.defaultTopic, this.config.defaultSubscribed, this.config.defaultTopicAuth, this.config.defaultUsername, this.config.defaultPassword, this.config.defaultAccessToken);
 
-        // Add preset topics
         if (typeof this.config.presetTopics === 'object' && this.config.presetTopics.length > 0) {
             this.config.presetTopics.forEach( (presetTopic, index) => {
-                topics[index + 1] = new Topic(this, presetTopic.presetTopicName, presetTopic.presetTopicSubscribed, presetTopic.presetTopicAuth, presetTopic.presetTopicUsername, presetTopic.presetTopicPassword, presetTopic.presetTopicAccessToken);
+                topics[presetTopic.presetTopicName] = new Topic(this, presetTopic.presetTopicName, presetTopic.presetTopicSubscribed, presetTopic.presetTopicAuth, presetTopic.presetTopicUsername, presetTopic.presetTopicPassword, presetTopic.presetTopicAccessToken);
             });
         }
-
         return topics;
     }
 }
