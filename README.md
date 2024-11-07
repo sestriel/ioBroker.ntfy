@@ -22,10 +22,9 @@ Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 	### **WORK IN PROGRESS**
 -->
 ### **WORK IN PROGRESS**
-- Update Readme
-### 0.3.1 (2024-11-07)
 * (sestriel) Updated Blockly
 * (sestriel) Updated packages
+
 ### 0.3.0 (2024-04-28)
 * (sestriel) Added URL-Attachments
 * (sestriel) Added Click-URL
@@ -33,19 +32,25 @@ Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 * (sestriel) Added Tags
 * (sestriel) Removed wrong error messages
 * (sestriel) Restructuring
+
 ### 0.2.2 (2024-04-12)
 * (sestriel) Bump version to 0.2.2
+
 ### 0.2.1 (2024-04-12)
 * (sestriel) Added proper unload handler
 * (sestriel) Fixed some errors shown from adapter-checker
 * (sestriel) Updated Readme
+
 ### 0.2.0 (2024-04-12)
 * (sestriel) Added ability to subscribe to topics
+
 ### 0.1.2 (2023-10-05)
 * (sestriel) Added presets for more topics
 * (sestriel) Added proper authorization for default topic
+
 ### 0.1.1 (2023-09-28)
 * (sestriel) First working release
+
 ### 0.1.0 (2023-09-27)
 * (sestriel) Initial release
 
