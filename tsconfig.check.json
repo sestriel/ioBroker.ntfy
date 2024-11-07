@@ -7,8 +7,9 @@
         "**/*.d.ts"
     ],
     "exclude": [
+        "admin/blockly.js",
         "**/build",
-        "node_modules/",
+        "node_modules/**",
         "widgets/"
     ]
 }
