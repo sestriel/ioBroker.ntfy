@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "ntfy",
-        "version": "0.3.0",
+        "version": "0.3.1",
         "news": {
             "0.3.0": {
                 "en": "Added URL-Attachments\nAdded Click-URL\nAdded Actionbuttons (View & HTTP)\nAdded Tags\n\nRemoved wrong error messages\nRestructuring.",
@@ -103,6 +103,7 @@
             "pushnotification",
             "push",
             "notification",
+            "message",
             "ntfy"
         ],
         "license": "MIT",
@@ -121,17 +122,21 @@
         "dataSource": "push",
         "blockly": true,
         "messagebox": true,
+        "supportedMessages": {
+            "custom": true,
+            "notifications": true
+        },
         "adminUI": {
             "config": "json"
         },
         "dependencies": [
             {
-                "js-controller": ">=3.3.22"
+                "js-controller": ">=5.0.19"
             }
         ],
         "globalDependencies": [
             {
-                "admin": ">=5.1.13"
+                "admin": ">=6.1.6"
             }
         ]
     },
