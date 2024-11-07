@@ -70,13 +70,17 @@ const NtfyBlockHelpers = {
     },
     getTopics: () => {
         const topics = [];
-        topics.push([main.objects['system.adapter.ntfy.0'].native.defaultTopic, main.objects['system.adapter.ntfy.0'].native.defaultTopic]);
-        if (typeof main !== 'undefined' && main.instances) {
-            const presetTopics = main.objects['system.adapter.ntfy.0'].native.presetTopics;
-            for (const topicIndex in presetTopics) {
-                topics.push([ presetTopics[topicIndex].presetTopicName, presetTopics[topicIndex].presetTopicName ]);
+
+        if (main.objects['system.adapter.ntfy.0'].native.defaultTopic) {
+            topics.push([main.objects['system.adapter.ntfy.0'].native.defaultTopic, main.objects['system.adapter.ntfy.0'].native.defaultTopic]);
+            if (typeof main !== 'undefined' && main.instances) {
+                const presetTopics = main.objects['system.adapter.ntfy.0'].native.presetTopics;
+                for (const topicIndex in presetTopics) {
+                    topics.push([presetTopics[topicIndex].presetTopicName, presetTopics[topicIndex].presetTopicName]);
+                }
             }
         }
+
         if (!topics.length) topics.push(['No input', 'No input']);
         return topics;
     }
@@ -404,7 +408,13 @@ Blockly.Blocks['ntfy_object'] = {
 
         this.itemCount_ = 3;
         this.updateShape_();
-        this.setMutator(new Blockly.Mutator(['ntfy_object_item']));
+
+        if (typeof Blockly.icons === 'object') {
+            this.setMutator(new Blockly.icons.MutatorIcon(['ntfy_object_item'], this));
+        } else {
+            this.setMutator(new Blockly.Mutator(['ntfy_object_item']));
+        }
+
         this.setOutput(true, 'NtfyObjectList');
         this.setColour(Blockly.Ntfy.HUE);
     },

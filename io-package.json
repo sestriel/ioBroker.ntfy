@@ -139,7 +139,16 @@
         "defaultPassword",
         "defaultAccessToken"
     ],
-    "native": {},
+    "native": {
+        "serverURL": "",
+        "defaultTopic": "",
+        "defaultTopicAuth": 0,
+        "defaultUsername": "",
+        "defaultPassword": "",
+        "defaultAccessToken": "",
+        "defaultSubscribed": false,
+        "presetTopics": {}
+    },
     "objects": [],
     "instanceObjects": [
         {

@@ -72,7 +72,7 @@ class ntfy extends utils.Adapter  {
         if (typeof obj === 'object' && obj.command) {
             if (obj.command === 'testBtn') {
                 let testMsg;
-                if (typeof this.config.presetTopics !== 'object' || this.config.presetTopics.length <= 0) {
+                if (typeof this.config.presetTopics !== 'object' || Object.keys(this.config.presetTopics).length <= 0) {
                     testMsg = 'Presets: None';
                 } else {
                     testMsg = `Presets: ${JSON.stringify(this.config.presetTopics)}`;
@@ -90,6 +90,7 @@ class ntfy extends utils.Adapter  {
             return false;
         }
         try {
+            // @ts-ignore
             const response = await axios.get(this.config.serverURL);
             if (response.status !== 200) {
                 this.log.error('Ntfy-Config: Server-URL is not reachable');
@@ -168,8 +169,9 @@ class ntfy extends utils.Adapter  {
 
         topics[this.config.defaultTopic] = new Topic(this, this.config.defaultTopic, this.config.defaultSubscribed, this.config.defaultTopicAuth, this.config.defaultUsername, this.config.defaultPassword, this.config.defaultAccessToken);
 
-        if (typeof this.config.presetTopics === 'object' && this.config.presetTopics.length > 0) {
-            this.config.presetTopics.forEach( (presetTopic, index) => {
+        if (typeof this.config.presetTopics === 'object' && Object.keys(this.config.presetTopics).length > 0) {
+            // @ts-ignore
+            this.config.presetTopics.forEach( (presetTopic) => {
                 topics[presetTopic.presetTopicName] = new Topic(this, presetTopic.presetTopicName, presetTopic.presetTopicSubscribed, presetTopic.presetTopicAuth, presetTopic.presetTopicUsername, presetTopic.presetTopicPassword, presetTopic.presetTopicAccessToken);
             });
         }

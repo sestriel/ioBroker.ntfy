@@ -5,8 +5,9 @@
 | `translate-adapter adminLanguages2words` to update it.   |
 +===================== DO NOT MODIFY ======================+
 */
-'use strict';
 
+'use strict';
+// @ts-ignore
 systemDictionary = {
     "serverURL": {                                    "en": "URL zum Ntfy-Server",                              "de": "URL zum Ntfy-Server",                              "ru": "URL-адрес Ntfy-сервера",                           "pt": "URL para servidor Ntfy",                           "nl": "URL naar Ntfy-Server",                             "fr": "URL vers le serveur Ntfy",                         "it": "URL del server Ntfy",                              "es": "URL del servidor Ntfy",                            "pl": "Adres URL serwera Ntfy",                           "uk": "URL-адреса сервера Ntfy",                          "zh-cn": "URL zum Ntfy 服务器"},
     "defaultSettingsHeader": {                        "en": "Default Topic Settings",                           "de": "Standard Topic Einstellungen",                     "ru": "Настройки темы по умолчанию",                      "pt": "Configurações de tópico padrão",                   "nl": "Standaard onderwerpinstellingen",                  "fr": "Paramètres de sujet par défaut",                   "it": "Impostazioni argomento predefinite",               "es": "Configuración de tema predeterminada",             "pl": "Domyślne ustawienia tematu",                       "uk": "Параметри теми за умовчанням",                     "zh-cn": "默认主题设置"},

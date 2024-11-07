@@ -3,7 +3,7 @@
 
 [![NPM version](https://img.shields.io/npm/v/iobroker.ntfy.svg)](https://www.npmjs.com/package/iobroker.ntfy) [![Downloads](https://img.shields.io/npm/dm/iobroker.ntfy.svg)](https://www.npmjs.com/package/iobroker.ntfy) ![Number of Installations](https://iobroker.live/badges/ntfy-installed.svg) 
 
-![Current version in stable repository](https://iobroker.live/badges/ntfy-stable.svg) ![Test and Release](https://github.com/sestriel/ioBroker.ntfy/workflows/Test%20and%20Release/badge.svg)
+![Test and Release](https://github.com/sestriel/ioBroker.ntfy/workflows/Test%20and%20Release/badge.svg)
 
 Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 
