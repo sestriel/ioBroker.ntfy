@@ -21,7 +21,7 @@ Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
-### **WORK IN PROGRESS**
+### 0.3.3 (2024-11-07)
 * (sestriel) Updated Blockly
 * (sestriel) Updated packages
 

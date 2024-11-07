@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "ntfy",
-    "version": "0.3.2",
+    "version": "0.3.3",
     "news": {
+      "0.3.3": {
+        "en": "Updated Blockly\nUpdated packages",
+        "de": "Blockly aktualisiert\nAktualisierte Pakete",
+        "ru": "Обновленная Blockly\nОбновленные пакеты",
+        "pt": "Bloqueio atualizado\nPacotes atualizados",
+        "nl": "Bijgewerkt\nBijgewerkte pakketten",
+        "fr": "Mise à jour en bloc\nPaquets mis à jour",
+        "it": "Aggiornato Blockly\nPacchetti aggiornati",
+        "es": "Actualizado Bloqueo\nPaquetes actualizados",
+        "pl": "Aktualizacja Blockly\nAktualizacja pakietów",
+        "uk": "Оновлено Blockly\nОновлені пакети",
+        "zh-cn": "已更新的块状\n更新软件包"
+      },
       "0.3.2": {
         "en": "Update Readme",
         "de": "Update Reader",
