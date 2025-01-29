@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Standaardtoegangstoken",
     "presetSettingsHeader": "Extra voorinstellingen",
     "presetTopicSubsribed": "Abonneren",
-    "presetTopicSubscribed": "Abonneren"
+    "presetTopicSubscribed": "Abonneren",
+    "allowSSL": "Sta zelf ondertekende certificaten toe voor URL-aanvragen"
 }

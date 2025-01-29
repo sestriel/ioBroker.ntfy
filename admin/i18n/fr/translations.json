@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Jeton d'accès par défaut",
     "presetSettingsHeader": "Préréglages supplémentaires",
     "presetTopicSubsribed": "S'abonner",
-    "presetTopicSubscribed": "S'abonner"
+    "presetTopicSubscribed": "S'abonner",
+    "allowSSL": "Autoriser les certificats auto-signés pour les demandes d'URL"
 }

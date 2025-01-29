@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Токен доступа по умолчанию",
     "presetSettingsHeader": "Дополнительные пресеты",
     "presetTopicSubsribed": "Подписаться",
-    "presetTopicSubscribed": "Подписаться"
+    "presetTopicSubscribed": "Подписаться",
+    "allowSSL": "Разрешить самоподтвержденные сертификаты для запросов на URL-адреса"
 }

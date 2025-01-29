@@ -8,6 +8,14 @@
             "help": "helpServerURL",
             "newLine": true
         },
+        "allowSSL": {
+            "type": "checkbox",
+            "label": "allowSSL",
+            "newLine": true,
+            "sm": 12,
+            "md": 6,
+            "lg": 3
+        },
         "defaultSettingsHeader": {
             "type": "header",
             "text": "defaultSettingsHeader",
@@ -52,6 +60,7 @@
         "defaultUsername": {
             "type": "text",
             "label": "defaultUsername",
+            "disabled": "data.defaultTopicAuth !== 1",
             "newLine": true,
             "sm": 12,
             "md": 6,
@@ -60,6 +69,7 @@
         "defaultPassword": {
             "type": "password",
             "label": "defaultPassword",
+            "disabled": "data.defaultTopicAuth !== 1",
             "visible": true,
             "newLine": false,
             "sm": 12,
@@ -67,9 +77,10 @@
             "lg": 3
         },
         "defaultAccessToken": {
-            "type": "text",
+            "type": "password",
             "label": "defaultAccessToken",
             "help": "helpDefaultAccessToken",
+            "disabled": "data.defaultTopicAuth !== 2",
             "newLine": false,
             "sm": 12,
             "md": 6,

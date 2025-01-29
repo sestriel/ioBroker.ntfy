@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Token di accesso predefinito",
     "presetSettingsHeader": "Preimpostazioni aggiuntive",
     "presetTopicSubsribed": "sottoscrivi",
-    "presetTopicSubscribed": "sottoscrivi"
+    "presetTopicSubscribed": "sottoscrivi",
+    "allowSSL": "Consenti certificati autofirmati per le richieste URL"
 }

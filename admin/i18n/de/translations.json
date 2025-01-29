@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Standardzugriffstoken",
     "presetSettingsHeader": "Zusätzliche Voreinstellungen",
     "presetTopicSubsribed": "Abonnieren",
-    "presetTopicSubscribed": "Abonnieren"
+    "presetTopicSubscribed": "Abonnieren",
+    "allowSSL": "Ermöglichen Sie selbstsignierte Zertifikate für URL-Anfragen"
 }

@@ -12,7 +12,6 @@
   "defaultTopicAuthUser": "User Authentication",
   "defaultTopicAuthToken": "Access Token",
   "defaultSubscribed": "Subscribe to default Topic",
-
   "presetSettingsHeader": "Additional Presets",
   "presetTopicName": "Topic",
   "presetTopicSubscribed": "Subscribe",
@@ -22,5 +21,6 @@
   "presetTopicAuthToken": "Access Token",
   "presetTopicUsername": "Username",
   "presetTopicPassword": "Password",
-  "presetTopicAccessToken": "Access Token"
+  "presetTopicAccessToken": "Access Token",
+  "allowSSL": "Allow self-signed certificates for URL requests"
 }

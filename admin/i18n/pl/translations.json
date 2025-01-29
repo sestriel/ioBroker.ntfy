@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Domyślny token dostępu",
     "presetSettingsHeader": "Dodatkowe ustawienia wstępne",
     "presetTopicSubsribed": "Subskrybuj",
-    "presetTopicSubscribed": "Subskrybuj"
+    "presetTopicSubscribed": "Subskrybuj",
+    "allowSSL": "Zezwalaj na autentyczne certyfikaty żądań URL"
 }

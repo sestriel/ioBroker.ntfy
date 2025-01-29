@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "默认访问令牌",
     "presetSettingsHeader": "附加预设",
     "presetTopicSubsribed": "订阅",
-    "presetTopicSubscribed": "订阅"
+    "presetTopicSubscribed": "订阅",
+    "allowSSL": "允许自我签名的URL请求证书"
 }

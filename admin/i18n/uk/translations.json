@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Маркер доступу за умовчанням",
     "presetSettingsHeader": "Додаткові пресети",
     "presetTopicSubsribed": "Підпишіться",
-    "presetTopicSubscribed": "Підпишіться"
+    "presetTopicSubscribed": "Підпишіться",
+    "allowSSL": "Дозволити самопідписані сертифікати на запити URL-адреси"
 }

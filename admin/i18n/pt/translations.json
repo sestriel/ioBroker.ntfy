@@ -22,5 +22,6 @@
     "presetTopicAccessToken": "Token de acesso padrão",
     "presetSettingsHeader": "Predefinições adicionais",
     "presetTopicSubsribed": "Se inscrever",
-    "presetTopicSubscribed": "Se inscrever"
+    "presetTopicSubscribed": "Se inscrever",
+    "allowSSL": "Permitir certificados auto-autentados para solicitações de URL"
 }
