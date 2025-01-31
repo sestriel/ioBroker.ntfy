@@ -2,23 +2,29 @@
     "i18n": true,
     "type": "panel",
     "items": {
+        "defaultServerHeader": {
+            "type": "header",
+            "text": "defaultServerHeader",
+            "size": 4
+        },
         "serverURL": {
             "type": "text",
             "label": "serverURL",
             "help": "helpServerURL",
-            "newLine": true
+            "newLine": true,
+            "sm": 12,
+            "md": 6
         },
         "allowSSL": {
             "type": "checkbox",
             "label": "allowSSL",
-            "newLine": true,
             "sm": 12,
-            "md": 6,
-            "lg": 3
+            "md": 6
         },
         "defaultSettingsHeader": {
             "type": "header",
             "text": "defaultSettingsHeader",
+            "newLine": true,
             "size": 4
         },
         "defaultTopic": {
@@ -148,15 +154,6 @@
                     "style": {}
                 }
             ]
-        },
-        "actionsDivider": {
-            "type": "divider"
-        },
-        "testBtn": {
-            "type": "sendTo",
-            "command": "testBtn",
-            "variant": "contained",
-            "label": "Test"
         }
     }
 }
