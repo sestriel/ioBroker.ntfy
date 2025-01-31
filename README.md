@@ -20,6 +20,12 @@ Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 <!--
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
+    * (Scrounger) jsonConfig optimized
+    * (Scrounger) encryption bug fix
+    * (Scrounger) option to allow self signed certs
+    * (Scrounger) send message via sendJSON state
+    * (Scrounger) error handling improved
+    * (Scrounger) small code improvements
 -->
 ### 0.3.3 (2024-11-07)
 * (sestriel) Updated Blockly
