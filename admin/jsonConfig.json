@@ -2,15 +2,29 @@
     "i18n": true,
     "type": "panel",
     "items": {
+        "defaultServerHeader": {
+            "type": "header",
+            "text": "defaultServerHeader",
+            "size": 4
+        },
         "serverURL": {
             "type": "text",
             "label": "serverURL",
             "help": "helpServerURL",
-            "newLine": true
+            "newLine": true,
+            "sm": 12,
+            "md": 6
+        },
+        "allowSSL": {
+            "type": "checkbox",
+            "label": "allowSSL",
+            "sm": 12,
+            "md": 6
         },
         "defaultSettingsHeader": {
             "type": "header",
             "text": "defaultSettingsHeader",
+            "newLine": true,
             "size": 4
         },
         "defaultTopic": {
@@ -52,6 +66,7 @@
         "defaultUsername": {
             "type": "text",
             "label": "defaultUsername",
+            "disabled": "data.defaultTopicAuth !== 1",
             "newLine": true,
             "sm": 12,
             "md": 6,
@@ -60,6 +75,7 @@
         "defaultPassword": {
             "type": "password",
             "label": "defaultPassword",
+            "disabled": "data.defaultTopicAuth !== 1",
             "visible": true,
             "newLine": false,
             "sm": 12,
@@ -67,9 +83,10 @@
             "lg": 3
         },
         "defaultAccessToken": {
-            "type": "text",
+            "type": "password",
             "label": "defaultAccessToken",
             "help": "helpDefaultAccessToken",
+            "disabled": "data.defaultTopicAuth !== 2",
             "newLine": false,
             "sm": 12,
             "md": 6,
@@ -137,15 +154,6 @@
                     "style": {}
                 }
             ]
-        },
-        "actionsDivider": {
-            "type": "divider"
-        },
-        "testBtn": {
-            "type": "sendTo",
-            "command": "testBtn",
-            "variant": "contained",
-            "label": "Test"
         }
     }
 }
