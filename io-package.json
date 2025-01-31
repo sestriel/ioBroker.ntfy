@@ -1,7 +1,7 @@
 {
   "common": {
     "name": "ntfy",
-    "version": "0.3.3",
+    "version": "0.3.4",
     "news": {
       "0.3.3": {
         "en": "Updated Blockly\nUpdated packages",
