@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "ntfy",
-    "version": "0.3.4",
+    "version": "0.3.5",
     "news": {
+      "0.3.5": {
+        "en": "jsonConfig optimized\nencryption bug fix\noption to allow self signed certs\nsend message via sendJSON state\nerror handling improved\nsmall code improvements",
+        "de": "jsonConfig optimiert\nfehler beheben\nmöglichkeit, selbst signierte zertifikate zu ermöglichen\nnachricht senden via sendJSON state\nfehlerbehandlung verbessert\nkleine code verbesserungen",
+        "ru": "jsonConfig оптимизирован\nисправление ошибок шифрования\nвозможность для самоподписанных сертрей\nотправить сообщение через государство sendJSON\nулучшенная обработка ошибок\nнебольшие улучшения кода",
+        "pt": "jsonConfig otimizado\ncorreção de erro de criptografia\nopção para permitir certificados auto assinados\nenviar mensagem via sendJSON\nmanipulação de erro melhorou\npequenas melhorias de código",
+        "nl": "jsonConfig geoptimaliseerd\nencryptie foutherstel\noptie om zelf ondertekende certs toe te staan\nbericht versturen via sendJSON status\nfoutafhandeling verbeterd\nkleine code verbeteringen",
+        "fr": "jsonConfig optimisé\ncorrection du bug de chiffrement\npossibilité d'autoriser les certificats autosignés\nenvoyer un message via l'état sendJSON\namélioration du traitement des erreurs\npetites améliorations de code",
+        "it": "jsonConfig ottimizzato\ncorrezione bug\nopzione per consentire auto firma certs\ninviare un messaggio via sendJSON State\nmiglioramento della gestione degli errori\npiccoli miglioramenti del codice",
+        "es": "jsonConfig optimizado\ncodificación de errores\nopción para permitir certificaciones auto firmados\nenviar mensaje vía el estado de JSON\nmanejo del error mejorado\npequeñas mejoras de código",
+        "pl": "jsonConfig zoptymalizowany\nbłąd szyfrowania\nopcja pozwalająca na autodestrukcję\nwysyłanie wiadomości przez stan sendJSON\nulepszona obsługa błędów\nniewielkie ulepszenia kodów",
+        "uk": "jsonConfig оптимізований\nвиправлення помилок\nможливість самостійно підписаних сертифікатів\nнадсилання повідомлення про стан відправкиJSON\nполіпшення обробки помилок\nвдосконалення невеликих кодів",
+        "zh-cn": "json 优化配置\n加密错误修正\n选项允许自签名证书\n通过 sendJSON 状态发送消息\n改进了错误处理\n小代码改进"
+      },
       "0.3.3": {
         "en": "Updated Blockly\nUpdated packages",
         "de": "Blockly aktualisiert\nAktualisierte Pakete",
@@ -80,19 +93,6 @@
         "pl": "pierwsza wersja robocza",
         "uk": "перший робочий випуск",
         "zh-cn": "第一个工作版本"
-      },
-      "0.0.1": {
-        "en": "initial release",
-        "de": "Erstveröffentlichung",
-        "ru": "Начальная версия",
-        "pt": "lançamento inicial",
-        "nl": "Eerste uitgave",
-        "fr": "Première version",
-        "it": "Versione iniziale",
-        "es": "Versión inicial",
-        "pl": "Pierwsze wydanie",
-        "uk": "Початкова версія",
-        "zh-cn": "首次出版"
       }
     },
     "title": "ntfy",
