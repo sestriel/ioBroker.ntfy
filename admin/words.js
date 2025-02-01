@@ -7,6 +7,7 @@
 */
 'use strict';
 
+// @ts-ignore
 systemDictionary = {
     "serverURL": {                                    "en": "URL zum Ntfy-Server",                              "de": "URL zum Ntfy-Server",                              "ru": "URL-адрес Ntfy-сервера",                           "pt": "URL para servidor Ntfy",                           "nl": "URL naar Ntfy-Server",                             "fr": "URL vers le serveur Ntfy",                         "it": "URL del server Ntfy",                              "es": "URL del servidor Ntfy",                            "pl": "Adres URL serwera Ntfy",                           "uk": "URL-адреса сервера Ntfy",                          "zh-cn": "URL zum Ntfy 服务器"},
     "serverSettingsHeader": {                         "en": "Server Settings",                                  "de": "Servereinstellungen",                              "ru": "Параметры сервера",                                "pt": "Configurações do servidor",                        "nl": "Serverinstellingen",                               "fr": "Paramètres du serveur",                            "it": "Impostazioni server",                              "es": "Configuración del servidor",                       "pl": "Ustawienia serwera",                               "uk": "Налаштування серверів",                            "zh-cn": "服务器设置"},

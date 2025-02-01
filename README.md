@@ -21,6 +21,11 @@ Use your ntfy.sh (free selfhosted) server to send and receive push notifications
 	Placeholder for the next version (at the beginning of the line):
 	### **WORK IN PROGRESS**
 -->
+
+### **WORK IN PROGRESS**
+* (sestriel) Implemented callback
+* (sestriel) linter cleanup
+
 ### 0.3.5 (2025-01-31)
 * (Scrounger) jsonConfig optimized
 * (Scrounger) encryption bug fix

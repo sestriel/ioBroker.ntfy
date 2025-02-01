@@ -1,12 +1,12 @@
-'use strict';
+"use strict";
 
-const utils = require('@iobroker/adapter-core');
-const axios = require('axios');
-const https = require('node:https');
+const utils = require("@iobroker/adapter-core");
+const axios = require("axios");
+const https = require("node:https");
 
-const { Topic } = require('./lib/topic');
-const { Message } = require('./lib/message');
-const { ActionButtonView, ActionButtonHTTP } = require('./lib/actionButton');
+const { Topic } = require("./lib/topic");
+const { Message } = require("./lib/message");
+const { ActionButtonView, ActionButtonHTTP } = require("./lib/actionButton");
 
 class ntfy extends utils.Adapter {
 
@@ -16,27 +16,27 @@ class ntfy extends utils.Adapter {
     constructor(options) {
         super({
             ...options,
-            name: 'ntfy',
+            name: "ntfy",
         });
 
         this.messageTime = 0;
         this.topics = {};
 
-        this.on('ready', this.onReady.bind(this));
-        this.on('stateChange', this.onStateChange.bind(this));
-        this.on('message', this.onMessage.bind(this));
-        this.on('unload', this.onUnload.bind(this));
+        this.on("ready", this.onReady.bind(this));
+        this.on("stateChange", this.onStateChange.bind(this));
+        this.on("message", this.onMessage.bind(this));
+        this.on("unload", this.onUnload.bind(this));
     }
 
     async onReady() {
-        this.setState('info.connection', false, true);
+        this.setState("info.connection", false, true);
         if (!await this.checkConfig()) {
             this.checkTopic();
             this.checkAuth();
             return;
         }
 
-        this.setState('info.connection', true, true);
+        this.setState("info.connection", true, true);
 
         this.topics = this.getTopics();
     }
@@ -47,10 +47,11 @@ class ntfy extends utils.Adapter {
                 this.topics[topicIndex].disconnect();
             }
 
-            this.setState('info.connection', false, true);
+            this.setState("info.connection", false, true);
 
             callback();
         } catch (e) {
+            console.log(e);
             callback();
         }
     }
@@ -59,19 +60,19 @@ class ntfy extends utils.Adapter {
      * @param {ioBroker.Message} obj
      */
     async onMessage(obj) {
-        if (typeof obj === 'object' && obj.message) {
-            if (obj.command === 'send') {
+        if (typeof obj === "object" && obj.message) {
+            if (obj.command === "send") {
                 if (await this.checkConfig()) {
                     this.sendMessage(obj);
                 }
             }
         }
 
-        if (typeof obj === 'object' && obj.command) {
-            if (obj.command === 'testBtn') {
+        if (typeof obj === "object" && obj.command) {
+            if (obj.command === "testBtn") {
                 let testMsg;
-                if (typeof this.config.presetTopics !== 'object' || Object.keys(this.config.presetTopics).length <= 0) {
-                    testMsg = 'Presets: None';
+                if (typeof this.config.presetTopics !== "object" || Object.keys(this.config.presetTopics).length <= 0) {
+                    testMsg = "Presets: None";
                 } else {
                     testMsg = `Presets: ${JSON.stringify(this.config.presetTopics)}`;
                 }
@@ -85,12 +86,12 @@ class ntfy extends utils.Adapter {
      * @param {ioBroker.State} state
      */
     onStateChange(id, state) {
-        const logPrefix = '[onStateChange]:';
+        const logPrefix = "[onStateChange]:";
         // Warning, state can be null if it was deleted
         try {
             if (state && !state.ack && !state.from.includes(this.namespace) && state.val) {
-                if (id.endsWith('.sendJSON')) {
-                    const topic = id.split('.')[id.split('.').length - 2];
+                if (id.endsWith(".sendJSON")) {
+                    const topic = id.split(".")[id.split(".").length - 2];
                     const json = JSON.parse(state.val);
 
                     this.sendMessage({ message: { topic: topic, ...json } });
@@ -104,7 +105,7 @@ class ntfy extends utils.Adapter {
 
     async checkConfig() {
         if (!this.config.serverURL) {
-            this.log.error('Ntfy-Config: Server-URL is not set');
+            this.log.error("Ntfy-Config: Server-URL is not set");
             return false;
         }
         try {
@@ -117,11 +118,12 @@ class ntfy extends utils.Adapter {
 
             const response = await instance.get(this.config.serverURL,);
             if (response.status !== 200) {
-                this.log.error('Ntfy-Config: Server-URL is not reachable');
+                this.log.error("Ntfy-Config: Server-URL is not reachable");
                 return false;
             }
         } catch (err) {
-            this.log.error('Ntfy-Config: Server-URL is not reachable');
+            this.log.error("Ntfy-Config: Server-URL is not reachable");
+            this.log.error(err);
             return false;
         }
         return true;
@@ -129,7 +131,7 @@ class ntfy extends utils.Adapter {
 
     checkTopic() {
         if (!this.config.defaultTopic) {
-            this.log.info('Ntfy-Config: No default topic is set');
+            this.log.info("Ntfy-Config: No default topic is set");
             return false;
         }
         return true;
@@ -140,7 +142,7 @@ class ntfy extends utils.Adapter {
             (this.config.defaultTopicAuth === 1 && (!this.config.defaultUsername && !this.config.defaultPassword)) ||
             (this.config.defaultTopicAuth === 2 && !this.config.defaultAccessToken)) {
 
-            this.log.info('Ntfy-Config: No default credentials are set (either username & password or access token)');
+            this.log.info("Ntfy-Config: No default credentials are set (either username & password or access token)");
             return false;
         }
         return true;
@@ -154,18 +156,18 @@ class ntfy extends utils.Adapter {
         message.addTags(obj.message.tags);
         message.addClickURL(obj.message.clickURL);
 
-        if (obj.message.attachment && obj.message.attachment !== null && obj.message.attachment.url !== '' && obj.message.attachment.name !== '') {
+        if (obj.message.attachment && obj.message.attachment.url !== "" && obj.message.attachment.name !== "") {
             message.addAttachment(obj.message.attachment.url, obj.message.attachment.name);
         }
 
         let actionButton = null;
 
-        if (obj.message.actionButton && obj.message.actionButton !== null) {
+        if (obj.message.actionButton) {
             switch (obj.message.actionButton.type) {
-                case 'view':
+                case "view":
                     actionButton = new ActionButtonView(obj.message.actionButton.label, obj.message.actionButton.url, obj.message.actionButton.clear);
                     break;
-                case 'http':
+                case "http":
                     actionButton = new ActionButtonHTTP(obj.message.actionButton.label, obj.message.actionButton.url, obj.message.actionButton.clear);
                     actionButton.setMethod(obj.message.actionButton.method);
                     actionButton.setHeaders(obj.message.actionButton.headers);
@@ -175,13 +177,13 @@ class ntfy extends utils.Adapter {
             message.addActionBtn(actionButton);
         }
 
-        this.log.debug('Message body (JSON): ' + JSON.stringify(message));
+        this.log.debug("Message body (JSON): " + JSON.stringify(message));
 
         if (this.messageTime && Date.now() - this.messageTime < 1000) return;
 
         this.messageTime = Date.now();
 
-        this.topics[message.topic].sendMessage(message);
+        this.topics[message.topic].sendMessage(message, obj);
     }
 
     getTopics() {
@@ -189,7 +191,7 @@ class ntfy extends utils.Adapter {
 
         topics[this.config.defaultTopic] = new Topic(this, this.config.defaultTopic, this.config.defaultSubscribed, this.config.defaultTopicAuth, this.config.defaultUsername, this.config.defaultPassword, this.config.defaultAccessToken);
 
-        if (typeof this.config.presetTopics === 'object' && Object.keys(this.config.presetTopics).length > 0) {
+        if (typeof this.config.presetTopics === "object" && Object.keys(this.config.presetTopics).length > 0) {
             // @ts-ignore
             this.config.presetTopics.forEach((presetTopic) => {
                 topics[presetTopic.presetTopicName] = new Topic(this, presetTopic.presetTopicName, presetTopic.presetTopicSubscribed, presetTopic.presetTopicAuth, presetTopic.presetTopicUsername, presetTopic.presetTopicPassword, presetTopic.presetTopicAccessToken);
