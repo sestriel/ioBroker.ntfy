@@ -22,7 +22,7 @@ export default [{
         },
 
         ecmaVersion: 2022,
-        sourceType: "module",
+        sourceType: "commonjs",
     },
 
     rules: {
