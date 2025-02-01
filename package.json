@@ -1,6 +1,6 @@
 {
   "name": "iobroker.ntfy",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Use your ntfy.sh (free self hosted) server for Push Notifications",
   "author": {
     "name": "sestriel",

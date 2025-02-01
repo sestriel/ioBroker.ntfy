@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "ntfy",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "news": {
+      "0.4.1": {
+        "en": "subscription hotfix",
+        "de": "abonnement hotfix",
+        "ru": "подписка",
+        "pt": "hotfix de assinatura",
+        "nl": "abonnement hotfix",
+        "fr": "abonnement hotfix",
+        "it": "abbonamento hotfix",
+        "es": "suscripción hotfix",
+        "pl": "hotfix subskrypcji",
+        "uk": "підписка hotfix",
+        "zh-cn": "订阅热补丁"
+      },
       "0.4.0": {
         "en": "Implemented callback\nlinter cleanup",
         "de": "Ergänzter Rückruf\nlinterreinigung",
@@ -80,19 +93,6 @@
         "pl": "Wersja typu Bump do 0.2.2",
         "uk": "Bump версія до 0.2.2",
         "zh-cn": "弹出版本改为0.2.2"
-      },
-      "0.2.0": {
-        "en": "Added ability to subscribe to topics.",
-        "de": "Topics können jetzt auch abonniert werden.",
-        "ru": "Добавлена способность подписываться на темы.",
-        "pt": "Adicionado capacidade de se inscrever em tópicos.",
-        "nl": "Toegevoegd vermogen om zich te abonneren op onderwerpen.",
-        "fr": "Ajout de la possibilité de s'abonner à des sujets.",
-        "it": "Aggiunta la capacità di sottoscrivere a argomenti.",
-        "es": "Posibilidad de suscribirse a temas.",
-        "pl": "Dodano możliwość subskrypcji tematów.",
-        "uk": "Додана можливість підписатися на теми.",
-        "zh-cn": "增加了订阅主题的能力."
       }
     },
     "title": "ntfy",
