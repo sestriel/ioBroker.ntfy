@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "ntfy",
-    "version": "0.3.5",
+    "version": "0.4.0",
     "news": {
+      "0.4.0": {
+        "en": "Implemented callback\nlinter cleanup",
+        "de": "Ergänzter Rückruf\nlinterreinigung",
+        "ru": "Реализованный отказ\nlinter clean",
+        "pt": "Retorno de chamada implementado\nlimpeza de linter",
+        "nl": "Terugroepen uitgevoerd\nlinter opruiming",
+        "fr": "Callback mis en œuvre\nnettoyage de l'intérieur",
+        "it": "Rilevamento semplificato\nlinter cleanup",
+        "es": "Retroceso aplicado\nlimpieza de interiores",
+        "pl": "Wdrożony powrót\nczyszczenie lintera",
+        "uk": "Реалізовано зворотний дзвінок\nхімчистка обличчя",
+        "zh-cn": "已执行回调\n中间清理"
+      },
       "0.3.5": {
         "en": "jsonConfig optimized\nencryption bug fix\noption to allow self signed certs\nsend message via sendJSON state\nerror handling improved\nsmall code improvements",
         "de": "jsonConfig optimiert\nfehler beheben\nmöglichkeit, selbst signierte zertifikate zu ermöglichen\nnachricht senden via sendJSON state\nfehlerbehandlung verbessert\nkleine code verbesserungen",
@@ -80,19 +93,6 @@
         "pl": "Dodano możliwość subskrypcji tematów.",
         "uk": "Додана можливість підписатися на теми.",
         "zh-cn": "增加了订阅主题的能力."
-      },
-      "0.1.1": {
-        "en": "first working release",
-        "de": "erste funktionierende Veröffentlichung",
-        "ru": "первый рабочий релиз",
-        "pt": "primeira versão de trabalho",
-        "nl": "eerste werkende uitgave",
-        "fr": "première version de travail",
-        "it": "prima versione funzionante",
-        "es": "primera versión funcional",
-        "pl": "pierwsza wersja robocza",
-        "uk": "перший робочий випуск",
-        "zh-cn": "第一个工作版本"
       }
     },
     "title": "ntfy",
